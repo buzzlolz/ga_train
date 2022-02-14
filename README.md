@@ -30,3 +30,13 @@ conda env create -f environment.yml --name env_name
 - nb_epochs: training epochs
 - lr :learning rate(default 0.001)
 - opt :optimizer(adam or sgd)
+
+# train step
+1.將data資料夾內的train.zip解壓縮
+
+2.python train_onecard.py
+
+3.至checkpoints資料夾取得最好or最後的hdf5 model
+
+4.將keras hdf5 model to tensorflow pb model
+    python keras_to_tensorflow.py –input_model_file XXXX.hdf5 –output_model_file XXXX.pb 
