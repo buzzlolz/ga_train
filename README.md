@@ -23,7 +23,7 @@ conda env create -f environment.yml --name env_name
 
 # train
 
-`python train_onecard.py` 
+`python train_onecard.py --appa_dir ??? ` 
 - appa_dir: train data dir
 - output_dir:model output dir
 - batch_size:batch_size(default 32)
